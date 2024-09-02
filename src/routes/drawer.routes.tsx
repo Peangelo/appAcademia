@@ -14,7 +14,7 @@ export default function DrawerRoutes() {
                 component={TabRoutes}
                 options={{
                     drawerIcon: ({color, size}) => <Feather name='home' color={color} size={size}/>,
-                    drawerLabel: 'Segunda feira'
+                    drawerLabel: 'Segunda'
                 }}
             />
             <Drawer.Screen
