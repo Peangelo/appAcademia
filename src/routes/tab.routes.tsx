@@ -1,10 +1,9 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Text } from 'react-native'; // Add this line to import the 'Text' component
 
-import New from '../screens/New'
 import TreinosSegunda from '../screens/TreinosSegunda';
-import Profile from '../screens/Profile';
-import TreinosTerca from '../screens/TreinosTerca';
+import Componentes from '../screens/componentes';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,10 +21,10 @@ export default function TabRoutes (){
             />
             <Tab.Screen
                 name='new'
-                component={New}
+                component={Componentes}
                 options={{
                     tabBarIcon: ({color, size}) => <Feather name='plus' color={color} size={size}/>,
-                    tabBarLabel: 'Treinos'
+                    tabBarLabel: () => <Text>Treinos</Text> 
                 }}
             />
         </Tab.Navigator>
