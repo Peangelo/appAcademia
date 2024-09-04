@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { AntDesign } from '@expo/vector-icons';
 //import { bold, regular } from '../utils/fonts';
 
-export default function New({
+export default function NewTerca({
   title,
   details,
 }: {
@@ -41,20 +41,21 @@ export default function New({
     <View style={styles.container}>
       <TouchableWithoutFeedback onPress={toggleAccordion}>
         <View style={styles.header}>
-          <Text style={styles.title}>{}</Text>
+          <Text style={styles.title}>{title}</Text>
           <AntDesign name={opened ? 'caretup' : 'caretdown'} size={16} />
         </View>
       </TouchableWithoutFeedback>
+
       {opened && (
         <View style={[styles.content]}>
-          <Text style={styles.details}>{details}</Text>
+          <Text style={styles.details}>teste</Text>
         </View>
       )}
     </View>
     <View style={styles.container}>
       <TouchableWithoutFeedback onPress={toggleAccordion}>
         <View style={styles.header}>
-          <Text style={styles.title}>Segunda Feira - treino 2</Text>
+          <Text style={styles.title}>Terça Feira - treino 2</Text>
           <AntDesign name={opened ? 'caretup' : 'caretdown'} size={16} />
         </View>
       </TouchableWithoutFeedback>
