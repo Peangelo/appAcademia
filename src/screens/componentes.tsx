@@ -30,7 +30,6 @@ export default function Componentes() {
           details={faq.answer}
         />
       ))}
-      console.log(answer);
     </View>
   );
 }
