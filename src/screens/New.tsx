@@ -41,7 +41,7 @@ export default function New({
     <View style={styles.container}>
       <TouchableWithoutFeedback onPress={toggleAccordion}>
         <View style={styles.header}>
-          <Text style={styles.title}>{}</Text>
+          <Text style={styles.title}>{title}</Text>
           <AntDesign name={opened ? 'caretup' : 'caretdown'} size={16} />
         </View>
       </TouchableWithoutFeedback>
