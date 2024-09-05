@@ -3,6 +3,7 @@ import { Feather } from '@expo/vector-icons'
 
 import TreinosTerca from '../screens/TreinosTerca';
 import NewTerca from '../screens/NewTerca';
+import Componentes from '../screens/componentes';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ export default function TabRoutesTerca (){
             />
             <Tab.Screen
                 name='new'
-                component={NewTerca}
+                component={Componentes}
                 options={{
                     tabBarIcon: ({color, size}) => <Feather name='plus' color={color} size={size}/>,
                     tabBarLabel: 'Treinos'

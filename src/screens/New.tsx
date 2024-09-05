@@ -51,20 +51,6 @@ export default function New({
         </View>
       )}
     </View>
-    <View style={styles.container}>
-      <TouchableWithoutFeedback onPress={toggleAccordion}>
-        <View style={styles.header}>
-          <Text style={styles.title}>Segunda Feira - treino 2</Text>
-          <AntDesign name={opened ? 'caretup' : 'caretdown'} size={16} />
-        </View>
-      </TouchableWithoutFeedback>
-
-      {opened && (
-        <View style={[styles.content]}>
-          <Text style={styles.details}><Text>Teste</Text> {"\n"} <Text>Teste</Text>{"\n"}<Text>Teste</Text></Text>
-        </View>
-      )}
-    </View>
     </>
   );
 }
