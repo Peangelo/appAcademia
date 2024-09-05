@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function TreinosTerca() {
+export default function TreinosQuarta() {
   return (
     <View style={styles.container}>
-      <Text  style={styles.title}>Ola, dona Paula. Aqui ficam os treinos de Terça</Text>
+      <Text  style={styles.title}>Ola, dona Paula. Aqui ficam os treinos de Quarta</Text>
     </View>
   );
 }

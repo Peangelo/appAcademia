@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { AntDesign } from '@expo/vector-icons';
 //import { bold, regular } from '../utils/fonts';
 
-export default function New({
+export default function NewQuinta({
   title,
   details,
 }: {
